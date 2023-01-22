@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="19574" systemVersion="21C52" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="PracticeRoutine" representedClassName=".PracticeRoutine" syncable="YES" codeGenerationType="class">
+        <attribute name="name" attributeType="String" minValueString="1"/>
+        <relationship name="scales" optional="YES" toMany="YES" deletionRule="Nullify" ordered="YES" destinationEntity="RoutineScale"/>
+        <uniquenessConstraints>
+            <uniquenessConstraint>
+                <constraint value="name"/>
+            </uniquenessConstraint>
+        </uniquenessConstraints>
+    </entity>
+    <entity name="PracticeScale" representedClassName=".PracticeScale" syncable="YES" codeGenerationType="category">
+        <attribute name="name" attributeType="String"/>
+        <attribute name="scaleDescription" optional="YES" attributeType="String"/>
+        <attribute name="scaleJson" optional="YES" attributeType="String"/>
+        <uniquenessConstraints>
+            <uniquenessConstraint>
+                <constraint value="name"/>
+            </uniquenessConstraint>
+        </uniquenessConstraints>
+    </entity>
+    <entity name="RoutineScale" representedClassName=".RoutineScale" syncable="YES" codeGenerationType="class">
+        <attribute name="tempo" attributeType="Integer 16" defaultValueString="120" usesScalarValueType="YES"/>
+        <relationship name="scale" maxCount="1" deletionRule="Nullify" destinationEntity="PracticeScale"/>
+    </entity>
+    <elements>
+        <element name="PracticeRoutine" positionX="-63" positionY="9" width="128" height="59"/>
+        <element name="PracticeScale" positionX="-63" positionY="-18" width="128" height="74"/>
+        <element name="RoutineScale" positionX="-54" positionY="18" width="128" height="59"/>
+    </elements>
+</model>

@@ -1,0 +1,1053 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 54;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0D9BBAAAFEA22785EE6ABB58 /* ScalePlayerTests-ScalePlayerMocks.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB86917E68888FE0CDB4CAC1 /* ScalePlayerTests-ScalePlayerMocks.generated.swift */; };
+		470B765029403CCC008F11AE /* CoreDataScaleDataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 470B764F29403CCC008F11AE /* CoreDataScaleDataStore.swift */; };
+		470B765729455608008F11AE /* ScalesTableViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 470B765629455608008F11AE /* ScalesTableViewModel.swift */; };
+		470B765B29455917008F11AE /* CoreDataContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 470B765A29455917008F11AE /* CoreDataContext.swift */; };
+		47287E13294BC32D004DAB0A /* TempoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47287E11294BC32D004DAB0A /* TempoView.swift */; };
+		47287E16294C3A65004DAB0A /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47287E15294C3A65004DAB0A /* RootViewController.swift */; };
+		47287E1C294E34DB004DAB0A /* RootViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47287E1B294E34DB004DAB0A /* RootViewModel.swift */; };
+		47287E20294E8D8A004DAB0A /* RoutinesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47287E1F294E8D8A004DAB0A /* RoutinesTableViewController.swift */; };
+		47287E22294E8F0E004DAB0A /* RoutinesTableViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47287E21294E8F0E004DAB0A /* RoutinesTableViewModel.swift */; };
+		47287E24294E9082004DAB0A /* RoutineDataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47287E23294E9082004DAB0A /* RoutineDataStore.swift */; };
+		47287E26294E90D3004DAB0A /* CoreDataRoutineDataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47287E25294E90D3004DAB0A /* CoreDataRoutineDataStore.swift */; };
+		47287E28294EFD99004DAB0A /* RoutineEditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47287E27294EFD99004DAB0A /* RoutineEditViewController.swift */; };
+		47287E2A2950E972004DAB0A /* RoutineEditViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47287E292950E972004DAB0A /* RoutineEditViewModel.swift */; };
+		473005AE29709AF600602136 /* ScaleEditToolbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 473005AD29709AF600602136 /* ScaleEditToolbar.swift */; };
+		473005B02970A4B000602136 /* PerformScaleToolbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 473005AF2970A4B000602136 /* PerformScaleToolbar.swift */; };
+		473005B22970D74C00602136 /* ViewControllerFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 473005B12970D74C00602136 /* ViewControllerFactory.swift */; };
+		473005B42972359500602136 /* RoutineEditViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 473005B32972359500602136 /* RoutineEditViewModelTests.swift */; };
+		473005B62972365500602136 /* RoutineEditViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 473005B52972365500602136 /* RoutineEditViewControllerTests.swift */; };
+		473005B82972800400602136 /* XCTestCase+ScalePlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 473005B72972800400602136 /* XCTestCase+ScalePlayer.swift */; };
+		473005BB2972E5CA00602136 /* PracticeRoutine+Typed.swift in Sources */ = {isa = PBXBuildFile; fileRef = 473005BA2972E5CA00602136 /* PracticeRoutine+Typed.swift */; };
+		473005BD2973056800602136 /* PlaybackSpritesViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 473005BC2973056800602136 /* PlaybackSpritesViewTests.swift */; };
+		473005BF2973094800602136 /* MidiPlayerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 473005BE2973094700602136 /* MidiPlayerTests.swift */; };
+		474DE581296A2F2E008B42E4 /* UITableView+EmptyMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 474DE580296A2F2E008B42E4 /* UITableView+EmptyMessage.swift */; };
+		474DE583296B81FD008B42E4 /* SimonWedgeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 474DE582296B81FD008B42E4 /* SimonWedgeView.swift */; };
+		4761677E295EB76100F3405D /* TempoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4761677D295EB76100F3405D /* TempoViewModel.swift */; };
+		4761678429615FAD00F3405D /* MidiPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4761678329615FAD00F3405D /* MidiPlayer.swift */; };
+		476167882965554D00F3405D /* PerformRoutinesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 476167872965554C00F3405D /* PerformRoutinesTableViewController.swift */; };
+		4761678C2967889A00F3405D /* PublishedOnMain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4761678B2967889900F3405D /* PublishedOnMain.swift */; };
+		4761678E2967BC3E00F3405D /* Publisher+WeakAssign.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4761678D2967BC3E00F3405D /* Publisher+WeakAssign.swift */; };
+		476167932968161E00F3405D /* RoutineScaleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 476167912968161E00F3405D /* RoutineScaleTableViewCell.swift */; };
+		476167942968161E00F3405D /* RoutineScaleTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 476167922968161E00F3405D /* RoutineScaleTableViewCell.xib */; };
+		47698789292DBDEA0028F3D7 /* ScaleEditViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47698788292DBDEA0028F3D7 /* ScaleEditViewModel.swift */; };
+		47801450297AB4330089D82E /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4780144F297AB4330089D82E /* Coordinator.swift */; };
+		47801452297AB47B0089D82E /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47801451297AB47B0089D82E /* AppCoordinator.swift */; };
+		47801454297ADFC70089D82E /* ScalesTableCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47801453297ADFC70089D82E /* ScalesTableCoordinator.swift */; };
+		47801456297AECD20089D82E /* ScalesEditCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47801455297AECD20089D82E /* ScalesEditCoordinator.swift */; };
+		47801458297AF1290089D82E /* RoutineTableCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47801457297AF1290089D82E /* RoutineTableCoordinator.swift */; };
+		4780145A297AF9060089D82E /* RoutineEditCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47801459297AF9060089D82E /* RoutineEditCoordinator.swift */; };
+		4790AF75295BA70C0061D19C /* ScaleBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4790AF74295BA70C0061D19C /* ScaleBuilder.swift */; };
+		4790AF79295C7FDF0061D19C /* PerformScaleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4790AF78295C7FDE0061D19C /* PerformScaleViewModel.swift */; };
+		4790AF7B295CA0200061D19C /* WeakObjectSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4790AF7A295CA0200061D19C /* WeakObjectSet.swift */; };
+		47AE4A362918C2CE000AFAE9 /* StrokeGestureRecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47AE4A352918C2CE000AFAE9 /* StrokeGestureRecognizer.swift */; };
+		47AE4A38291C6FA8000AFAE9 /* TimGM6mb.sf2 in Resources */ = {isa = PBXBuildFile; fileRef = 47AE4A37291C6FA8000AFAE9 /* TimGM6mb.sf2 */; };
+		47B30492295352A900B20F6B /* ScaleSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47B30491295352A900B20F6B /* ScaleSearchViewController.swift */; };
+		47B30494295382C400B20F6B /* ScaleSearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47B30493295382C400B20F6B /* ScaleSearchViewModel.swift */; };
+		47B304962953C35800B20F6B /* Container+ScalePlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47B304952953C35800B20F6B /* Container+ScalePlayer.swift */; };
+		47B30499295A422A00B20F6B /* PerformScaleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47B30498295A422A00B20F6B /* PerformScaleViewController.swift */; };
+		47B3049B295A704E00B20F6B /* PerformScalesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47B3049A295A704E00B20F6B /* PerformScalesTableViewController.swift */; };
+		47B71CD029393BB50026F4B1 /* ScaleDataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47B71CCF29393BB50026F4B1 /* ScaleDataStore.swift */; };
+		47B71CD229393E040026F4B1 /* PracticeScale.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47B71CD129393E040026F4B1 /* PracticeScale.swift */; };
+		47B71CDB293AD4600026F4B1 /* ScalesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47B71CD9293AD4600026F4B1 /* ScalesTableViewController.swift */; };
+		47C495F2293D9F6900DD94FA /* ScalesModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 47C495F0293D9F6900DD94FA /* ScalesModel.xcdatamodeld */; };
+		47E09785297C8E6500755053 /* UIBezierPath+Lines.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47E09784297C8E6500755053 /* UIBezierPath+Lines.swift */; };
+		47E09787297CA04900755053 /* BeatCursor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47E09786297CA04900755053 /* BeatCursor.swift */; };
+		47E09789297CA46600755053 /* ScaleEditView+Types.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47E09788297CA46600755053 /* ScaleEditView+Types.swift */; };
+		47FC8008296BD2950048A0C3 /* Logger+ScalePlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47FC8007296BD2950048A0C3 /* Logger+ScalePlayer.swift */; };
+		47FC800A296CDFF30048A0C3 /* UIColor+app.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47FC8009296CDFF30048A0C3 /* UIColor+app.swift */; };
+		47FC800C296D06D80048A0C3 /* NameEditView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47FC800B296D06D80048A0C3 /* NameEditView.swift */; };
+		47FC8011296E35FF0048A0C3 /* UIView+Separator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47FC8010296E35FF0048A0C3 /* UIView+Separator.swift */; };
+		47FC8014296E4EB10048A0C3 /* SingleValueEditor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47FC8013296E4EB00048A0C3 /* SingleValueEditor.swift */; };
+		47FC8016296F7D330048A0C3 /* PlaybackSpritesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47FC8015296F7D330048A0C3 /* PlaybackSpritesView.swift */; };
+		47FC8018296F93D50048A0C3 /* ErrorHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47FC8017296F93D40048A0C3 /* ErrorHandler.swift */; };
+		47FC801A296FAE8B0048A0C3 /* NSMutableAttributedString+Append.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47FC8019296FAE8A0048A0C3 /* NSMutableAttributedString+Append.swift */; };
+		5312FF6921AD27B4009C326D /* ScaleEditMeasureLineLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5312FF6821AD27B4009C326D /* ScaleEditMeasureLineLayer.swift */; };
+		5312FF7021AD760B009C326D /* ScaleNotePosition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5312FF6F21AD760B009C326D /* ScaleNotePosition.swift */; };
+		5398FBE821AC203E005EC24C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5398FBE721AC203E005EC24C /* AppDelegate.swift */; };
+		5398FBEA21AC203E005EC24C /* ScaleEditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5398FBE921AC203E005EC24C /* ScaleEditViewController.swift */; };
+		5398FBEF21AC2041005EC24C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5398FBEE21AC2041005EC24C /* Assets.xcassets */; };
+		5398FBF221AC2041005EC24C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5398FBF021AC2041005EC24C /* LaunchScreen.storyboard */; };
+		5398FBFD21AC2041005EC24C /* ScaleNoteTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5398FBFC21AC2041005EC24C /* ScaleNoteTests.swift */; };
+		5398FC0921AC20B2005EC24C /* ScaleEditView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5398FC0821AC20B2005EC24C /* ScaleEditView.swift */; };
+		5398FC0B21AC224D005EC24C /* ScaleEditRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5398FC0A21AC224D005EC24C /* ScaleEditRowView.swift */; };
+		5398FC0D21AC226F005EC24C /* ScaleEditCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5398FC0C21AC226F005EC24C /* ScaleEditCellView.swift */; };
+		5398FC0F21AC2284005EC24C /* ScaleNote.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5398FC0E21AC2284005EC24C /* ScaleNote.swift */; };
+		D7B95C00B6D4FA64CE556EFE /* Pods_ScalePlayerTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 88A70C59F1B06BA3E77E245C /* Pods_ScalePlayerTests.framework */; };
+		E8EA2118C17585B0DC7ABC2A /* Pods_ScalePlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF77D472AAD1B684531858F2 /* Pods_ScalePlayer.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5398FBF921AC2041005EC24C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5398FBDC21AC203E005EC24C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5398FBE321AC203E005EC24C;
+			remoteInfo = MIDIPianoRollView;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		470B764F29403CCC008F11AE /* CoreDataScaleDataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataScaleDataStore.swift; sourceTree = "<group>"; };
+		470B765629455608008F11AE /* ScalesTableViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScalesTableViewModel.swift; sourceTree = "<group>"; };
+		470B765A29455917008F11AE /* CoreDataContext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataContext.swift; sourceTree = "<group>"; };
+		47287E11294BC32D004DAB0A /* TempoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TempoView.swift; sourceTree = "<group>"; };
+		47287E15294C3A65004DAB0A /* RootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
+		47287E1B294E34DB004DAB0A /* RootViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewModel.swift; sourceTree = "<group>"; };
+		47287E1F294E8D8A004DAB0A /* RoutinesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoutinesTableViewController.swift; sourceTree = "<group>"; };
+		47287E21294E8F0E004DAB0A /* RoutinesTableViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoutinesTableViewModel.swift; sourceTree = "<group>"; };
+		47287E23294E9082004DAB0A /* RoutineDataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoutineDataStore.swift; sourceTree = "<group>"; };
+		47287E25294E90D3004DAB0A /* CoreDataRoutineDataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataRoutineDataStore.swift; sourceTree = "<group>"; };
+		47287E27294EFD99004DAB0A /* RoutineEditViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoutineEditViewController.swift; sourceTree = "<group>"; };
+		47287E292950E972004DAB0A /* RoutineEditViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoutineEditViewModel.swift; sourceTree = "<group>"; };
+		473005AD29709AF600602136 /* ScaleEditToolbar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScaleEditToolbar.swift; sourceTree = "<group>"; };
+		473005AF2970A4B000602136 /* PerformScaleToolbar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PerformScaleToolbar.swift; sourceTree = "<group>"; };
+		473005B12970D74C00602136 /* ViewControllerFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerFactory.swift; sourceTree = "<group>"; };
+		473005B32972359500602136 /* RoutineEditViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoutineEditViewModelTests.swift; sourceTree = "<group>"; };
+		473005B52972365500602136 /* RoutineEditViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoutineEditViewControllerTests.swift; sourceTree = "<group>"; };
+		473005B72972800400602136 /* XCTestCase+ScalePlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "XCTestCase+ScalePlayer.swift"; sourceTree = "<group>"; };
+		473005BA2972E5CA00602136 /* PracticeRoutine+Typed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PracticeRoutine+Typed.swift"; sourceTree = "<group>"; };
+		473005BC2973056800602136 /* PlaybackSpritesViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaybackSpritesViewTests.swift; sourceTree = "<group>"; };
+		473005BE2973094700602136 /* MidiPlayerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MidiPlayerTests.swift; sourceTree = "<group>"; };
+		474DE580296A2F2E008B42E4 /* UITableView+EmptyMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+EmptyMessage.swift"; sourceTree = "<group>"; };
+		474DE582296B81FD008B42E4 /* SimonWedgeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimonWedgeView.swift; sourceTree = "<group>"; };
+		4761677D295EB76100F3405D /* TempoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TempoViewModel.swift; sourceTree = "<group>"; };
+		4761678329615FAD00F3405D /* MidiPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MidiPlayer.swift; sourceTree = "<group>"; };
+		476167872965554C00F3405D /* PerformRoutinesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PerformRoutinesTableViewController.swift; sourceTree = "<group>"; };
+		4761678B2967889900F3405D /* PublishedOnMain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PublishedOnMain.swift; sourceTree = "<group>"; };
+		4761678D2967BC3E00F3405D /* Publisher+WeakAssign.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Publisher+WeakAssign.swift"; sourceTree = "<group>"; };
+		476167912968161E00F3405D /* RoutineScaleTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoutineScaleTableViewCell.swift; sourceTree = "<group>"; };
+		476167922968161E00F3405D /* RoutineScaleTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RoutineScaleTableViewCell.xib; sourceTree = "<group>"; };
+		47698788292DBDEA0028F3D7 /* ScaleEditViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScaleEditViewModel.swift; sourceTree = "<group>"; };
+		4780144F297AB4330089D82E /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		47801451297AB47B0089D82E /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		47801453297ADFC70089D82E /* ScalesTableCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScalesTableCoordinator.swift; sourceTree = "<group>"; };
+		47801455297AECD20089D82E /* ScalesEditCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScalesEditCoordinator.swift; sourceTree = "<group>"; };
+		47801457297AF1290089D82E /* RoutineTableCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoutineTableCoordinator.swift; sourceTree = "<group>"; };
+		47801459297AF9060089D82E /* RoutineEditCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoutineEditCoordinator.swift; sourceTree = "<group>"; };
+		4790AF74295BA70C0061D19C /* ScaleBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScaleBuilder.swift; sourceTree = "<group>"; };
+		4790AF78295C7FDE0061D19C /* PerformScaleViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PerformScaleViewModel.swift; sourceTree = "<group>"; };
+		4790AF7A295CA0200061D19C /* WeakObjectSet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeakObjectSet.swift; sourceTree = "<group>"; };
+		47AE4A352918C2CE000AFAE9 /* StrokeGestureRecognizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StrokeGestureRecognizer.swift; sourceTree = "<group>"; };
+		47AE4A37291C6FA8000AFAE9 /* TimGM6mb.sf2 */ = {isa = PBXFileReference; lastKnownFileType = file; path = TimGM6mb.sf2; sourceTree = "<group>"; };
+		47B30491295352A900B20F6B /* ScaleSearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScaleSearchViewController.swift; sourceTree = "<group>"; };
+		47B30493295382C400B20F6B /* ScaleSearchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScaleSearchViewModel.swift; sourceTree = "<group>"; };
+		47B304952953C35800B20F6B /* Container+ScalePlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Container+ScalePlayer.swift"; sourceTree = "<group>"; };
+		47B30498295A422A00B20F6B /* PerformScaleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PerformScaleViewController.swift; sourceTree = "<group>"; };
+		47B3049A295A704E00B20F6B /* PerformScalesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PerformScalesTableViewController.swift; sourceTree = "<group>"; };
+		47B71CCF29393BB50026F4B1 /* ScaleDataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScaleDataStore.swift; sourceTree = "<group>"; };
+		47B71CD129393E040026F4B1 /* PracticeScale.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PracticeScale.swift; sourceTree = "<group>"; };
+		47B71CD9293AD4600026F4B1 /* ScalesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScalesTableViewController.swift; sourceTree = "<group>"; };
+		47C495F1293D9F6900DD94FA /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
+		47E09784297C8E6500755053 /* UIBezierPath+Lines.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIBezierPath+Lines.swift"; sourceTree = "<group>"; };
+		47E09786297CA04900755053 /* BeatCursor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeatCursor.swift; sourceTree = "<group>"; };
+		47E09788297CA46600755053 /* ScaleEditView+Types.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ScaleEditView+Types.swift"; sourceTree = "<group>"; };
+		47FC8007296BD2950048A0C3 /* Logger+ScalePlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Logger+ScalePlayer.swift"; sourceTree = "<group>"; };
+		47FC8009296CDFF30048A0C3 /* UIColor+app.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+app.swift"; sourceTree = "<group>"; };
+		47FC800B296D06D80048A0C3 /* NameEditView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NameEditView.swift; sourceTree = "<group>"; };
+		47FC8010296E35FF0048A0C3 /* UIView+Separator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Separator.swift"; sourceTree = "<group>"; };
+		47FC8013296E4EB00048A0C3 /* SingleValueEditor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleValueEditor.swift; sourceTree = "<group>"; };
+		47FC8015296F7D330048A0C3 /* PlaybackSpritesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaybackSpritesView.swift; sourceTree = "<group>"; };
+		47FC8017296F93D40048A0C3 /* ErrorHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorHandler.swift; sourceTree = "<group>"; };
+		47FC8019296FAE8A0048A0C3 /* NSMutableAttributedString+Append.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSMutableAttributedString+Append.swift"; sourceTree = "<group>"; };
+		5312FF6821AD27B4009C326D /* ScaleEditMeasureLineLayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScaleEditMeasureLineLayer.swift; sourceTree = "<group>"; };
+		5312FF6F21AD760B009C326D /* ScaleNotePosition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScaleNotePosition.swift; sourceTree = "<group>"; };
+		5398FBE421AC203E005EC24C /* ScalePlayer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ScalePlayer.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5398FBE721AC203E005EC24C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		5398FBE921AC203E005EC24C /* ScaleEditViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScaleEditViewController.swift; sourceTree = "<group>"; };
+		5398FBEE21AC2041005EC24C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5398FBF121AC2041005EC24C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		5398FBF321AC2041005EC24C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5398FBF821AC2041005EC24C /* ScalePlayerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ScalePlayerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5398FBFC21AC2041005EC24C /* ScaleNoteTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScaleNoteTests.swift; sourceTree = "<group>"; };
+		5398FBFE21AC2041005EC24C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5398FC0821AC20B2005EC24C /* ScaleEditView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScaleEditView.swift; sourceTree = "<group>"; };
+		5398FC0A21AC224D005EC24C /* ScaleEditRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScaleEditRowView.swift; sourceTree = "<group>"; };
+		5398FC0C21AC226F005EC24C /* ScaleEditCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScaleEditCellView.swift; sourceTree = "<group>"; };
+		5398FC0E21AC2284005EC24C /* ScaleNote.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScaleNote.swift; sourceTree = "<group>"; };
+		56D90D6A196654479F29C848 /* Pods-ScalePlayer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ScalePlayer.debug.xcconfig"; path = "Target Support Files/Pods-ScalePlayer/Pods-ScalePlayer.debug.xcconfig"; sourceTree = "<group>"; };
+		6A20E96402FB427C8CA9AAA7 /* Pods-ScalePlayer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ScalePlayer.release.xcconfig"; path = "Target Support Files/Pods-ScalePlayer/Pods-ScalePlayer.release.xcconfig"; sourceTree = "<group>"; };
+		88A70C59F1B06BA3E77E245C /* Pods_ScalePlayerTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ScalePlayerTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DF77D472AAD1B684531858F2 /* Pods_ScalePlayer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ScalePlayer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E8D31A29B0D2B8D3BEE68C70 /* Pods-ScalePlayerTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ScalePlayerTests.debug.xcconfig"; path = "Target Support Files/Pods-ScalePlayerTests/Pods-ScalePlayerTests.debug.xcconfig"; sourceTree = "<group>"; };
+		EB86917E68888FE0CDB4CAC1 /* ScalePlayerTests-ScalePlayerMocks.generated.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; name = "ScalePlayerTests-ScalePlayerMocks.generated.swift"; path = "MockingbirdMocks/ScalePlayerTests-ScalePlayerMocks.generated.swift"; sourceTree = "<group>"; };
+		FD47F06D122E12FF0829E79F /* Pods-ScalePlayerTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ScalePlayerTests.release.xcconfig"; path = "Target Support Files/Pods-ScalePlayerTests/Pods-ScalePlayerTests.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5398FBE121AC203E005EC24C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E8EA2118C17585B0DC7ABC2A /* Pods_ScalePlayer.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5398FBF521AC2041005EC24C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D7B95C00B6D4FA64CE556EFE /* Pods_ScalePlayerTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		470B765329455413008F11AE /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				470B765A29455917008F11AE /* CoreDataContext.swift */,
+				47C495F0293D9F6900DD94FA /* ScalesModel.xcdatamodeld */,
+				47E0978A297CE45E00755053 /* Routine */,
+				47E0978B297CE46400755053 /* Scale */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		470B765429455435008F11AE /* Audio */ = {
+			isa = PBXGroup;
+			children = (
+				4761678329615FAD00F3405D /* MidiPlayer.swift */,
+				4790AF74295BA70C0061D19C /* ScaleBuilder.swift */,
+			);
+			path = Audio;
+			sourceTree = "<group>";
+		};
+		473005C029735D3000602136 /* Scales */ = {
+			isa = PBXGroup;
+			children = (
+				473005C129735D4100602136 /* Edit */,
+				473005C229735D4C00602136 /* Perform */,
+			);
+			path = Scales;
+			sourceTree = "<group>";
+		};
+		473005C129735D4100602136 /* Edit */ = {
+			isa = PBXGroup;
+			children = (
+				5398FC0C21AC226F005EC24C /* ScaleEditCellView.swift */,
+				47801455297AECD20089D82E /* ScalesEditCoordinator.swift */,
+				5312FF6821AD27B4009C326D /* ScaleEditMeasureLineLayer.swift */,
+				5398FC0A21AC224D005EC24C /* ScaleEditRowView.swift */,
+				473005AD29709AF600602136 /* ScaleEditToolbar.swift */,
+				5398FC0821AC20B2005EC24C /* ScaleEditView.swift */,
+				5398FBE921AC203E005EC24C /* ScaleEditViewController.swift */,
+				47698788292DBDEA0028F3D7 /* ScaleEditViewModel.swift */,
+				47B71CD9293AD4600026F4B1 /* ScalesTableViewController.swift */,
+				470B765629455608008F11AE /* ScalesTableViewModel.swift */,
+				47801453297ADFC70089D82E /* ScalesTableCoordinator.swift */,
+				47E09786297CA04900755053 /* BeatCursor.swift */,
+				47E09788297CA46600755053 /* ScaleEditView+Types.swift */,
+			);
+			path = Edit;
+			sourceTree = "<group>";
+		};
+		473005C229735D4C00602136 /* Perform */ = {
+			isa = PBXGroup;
+			children = (
+				47B3049A295A704E00B20F6B /* PerformScalesTableViewController.swift */,
+				473005AF2970A4B000602136 /* PerformScaleToolbar.swift */,
+				47B30498295A422A00B20F6B /* PerformScaleViewController.swift */,
+				4790AF78295C7FDE0061D19C /* PerformScaleViewModel.swift */,
+				47FC8015296F7D330048A0C3 /* PlaybackSpritesView.swift */,
+			);
+			path = Perform;
+			sourceTree = "<group>";
+		};
+		473005C329735E0900602136 /* Routines */ = {
+			isa = PBXGroup;
+			children = (
+				473005C429735E1200602136 /* Edit */,
+				473005C529735E1700602136 /* Perform */,
+			);
+			path = Routines;
+			sourceTree = "<group>";
+		};
+		473005C429735E1200602136 /* Edit */ = {
+			isa = PBXGroup;
+			children = (
+				47801459297AF9060089D82E /* RoutineEditCoordinator.swift */,
+				47287E27294EFD99004DAB0A /* RoutineEditViewController.swift */,
+				47287E292950E972004DAB0A /* RoutineEditViewModel.swift */,
+				476167912968161E00F3405D /* RoutineScaleTableViewCell.swift */,
+				476167922968161E00F3405D /* RoutineScaleTableViewCell.xib */,
+				47B30491295352A900B20F6B /* ScaleSearchViewController.swift */,
+				47B30493295382C400B20F6B /* ScaleSearchViewModel.swift */,
+				47801457297AF1290089D82E /* RoutineTableCoordinator.swift */,
+				47287E1F294E8D8A004DAB0A /* RoutinesTableViewController.swift */,
+				47287E21294E8F0E004DAB0A /* RoutinesTableViewModel.swift */,
+			);
+			path = Edit;
+			sourceTree = "<group>";
+		};
+		473005C529735E1700602136 /* Perform */ = {
+			isa = PBXGroup;
+			children = (
+				476167872965554C00F3405D /* PerformRoutinesTableViewController.swift */,
+			);
+			path = Perform;
+			sourceTree = "<group>";
+		};
+		473005C629735E8900602136 /* AppRoot */ = {
+			isa = PBXGroup;
+			children = (
+				47801451297AB47B0089D82E /* AppCoordinator.swift */,
+				47287E15294C3A65004DAB0A /* RootViewController.swift */,
+				47287E1B294E34DB004DAB0A /* RootViewModel.swift */,
+			);
+			path = AppRoot;
+			sourceTree = "<group>";
+		};
+		473005C729735EFE00602136 /* UIKit */ = {
+			isa = PBXGroup;
+			children = (
+				47E09784297C8E6500755053 /* UIBezierPath+Lines.swift */,
+				474DE582296B81FD008B42E4 /* SimonWedgeView.swift */,
+				47AE4A352918C2CE000AFAE9 /* StrokeGestureRecognizer.swift */,
+				47FC8009296CDFF30048A0C3 /* UIColor+app.swift */,
+				47FC8010296E35FF0048A0C3 /* UIView+Separator.swift */,
+				474DE580296A2F2E008B42E4 /* UITableView+EmptyMessage.swift */,
+			);
+			path = UIKit;
+			sourceTree = "<group>";
+		};
+		473005C829735F1F00602136 /* Combine */ = {
+			isa = PBXGroup;
+			children = (
+				4761678B2967889900F3405D /* PublishedOnMain.swift */,
+				4761678D2967BC3E00F3405D /* Publisher+WeakAssign.swift */,
+			);
+			path = Combine;
+			sourceTree = "<group>";
+		};
+		473005C929735F5500602136 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				4780144F297AB4330089D82E /* Coordinator.swift */,
+				47FC8017296F93D40048A0C3 /* ErrorHandler.swift */,
+				47FC8007296BD2950048A0C3 /* Logger+ScalePlayer.swift */,
+				47FC800B296D06D80048A0C3 /* NameEditView.swift */,
+				47FC8013296E4EB00048A0C3 /* SingleValueEditor.swift */,
+				47287E11294BC32D004DAB0A /* TempoView.swift */,
+				4761677D295EB76100F3405D /* TempoViewModel.swift */,
+				473005B12970D74C00602136 /* ViewControllerFactory.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		473005CA29735FCA00602136 /* Foundation */ = {
+			isa = PBXGroup;
+			children = (
+				47FC8019296FAE8A0048A0C3 /* NSMutableAttributedString+Append.swift */,
+				4790AF7A295CA0200061D19C /* WeakObjectSet.swift */,
+			);
+			path = Foundation;
+			sourceTree = "<group>";
+		};
+		4790AF73295BA6F40061D19C /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				473005C929735F5500602136 /* App */,
+				473005C829735F1F00602136 /* Combine */,
+				473005CA29735FCA00602136 /* Foundation */,
+				473005C729735EFE00602136 /* UIKit */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		47E0978A297CE45E00755053 /* Routine */ = {
+			isa = PBXGroup;
+			children = (
+				47287E25294E90D3004DAB0A /* CoreDataRoutineDataStore.swift */,
+				473005BA2972E5CA00602136 /* PracticeRoutine+Typed.swift */,
+				47287E23294E9082004DAB0A /* RoutineDataStore.swift */,
+			);
+			path = Routine;
+			sourceTree = "<group>";
+		};
+		47E0978B297CE46400755053 /* Scale */ = {
+			isa = PBXGroup;
+			children = (
+				470B764F29403CCC008F11AE /* CoreDataScaleDataStore.swift */,
+				47B71CD129393E040026F4B1 /* PracticeScale.swift */,
+				5398FC0E21AC2284005EC24C /* ScaleNote.swift */,
+				5312FF6F21AD760B009C326D /* ScaleNotePosition.swift */,
+				47B71CCF29393BB50026F4B1 /* ScaleDataStore.swift */,
+			);
+			path = Scale;
+			sourceTree = "<group>";
+		};
+		5398FBDB21AC203E005EC24C = {
+			isa = PBXGroup;
+			children = (
+				5398FBE621AC203E005EC24C /* ScalePlayer */,
+				5398FBFB21AC2041005EC24C /* ScalePlayerTests */,
+				5398FBE521AC203E005EC24C /* Products */,
+				EBD41A8634EDC65BDA0D7FE1 /* Pods */,
+				960F57052ED5164B54914BF0 /* Frameworks */,
+				BC984DEA0D69291AE76E6073 /* Generated Mocks */,
+			);
+			sourceTree = "<group>";
+		};
+		5398FBE521AC203E005EC24C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5398FBE421AC203E005EC24C /* ScalePlayer.app */,
+				5398FBF821AC2041005EC24C /* ScalePlayerTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5398FBE621AC203E005EC24C /* ScalePlayer */ = {
+			isa = PBXGroup;
+			children = (
+				47AE4A37291C6FA8000AFAE9 /* TimGM6mb.sf2 */,
+				5398FC0721AC209D005EC24C /* Source */,
+				5398FBF021AC2041005EC24C /* LaunchScreen.storyboard */,
+				5398FBEE21AC2041005EC24C /* Assets.xcassets */,
+				5398FBF321AC2041005EC24C /* Info.plist */,
+			);
+			path = ScalePlayer;
+			sourceTree = "<group>";
+		};
+		5398FBFB21AC2041005EC24C /* ScalePlayerTests */ = {
+			isa = PBXGroup;
+			children = (
+				473005BE2973094700602136 /* MidiPlayerTests.swift */,
+				473005BC2973056800602136 /* PlaybackSpritesViewTests.swift */,
+				473005B52972365500602136 /* RoutineEditViewControllerTests.swift */,
+				473005B32972359500602136 /* RoutineEditViewModelTests.swift */,
+				5398FBFC21AC2041005EC24C /* ScaleNoteTests.swift */,
+				473005B72972800400602136 /* XCTestCase+ScalePlayer.swift */,
+				5398FBFE21AC2041005EC24C /* Info.plist */,
+			);
+			path = ScalePlayerTests;
+			sourceTree = "<group>";
+		};
+		5398FC0721AC209D005EC24C /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				5398FBE721AC203E005EC24C /* AppDelegate.swift */,
+				47B304952953C35800B20F6B /* Container+ScalePlayer.swift */,
+				473005C629735E8900602136 /* AppRoot */,
+				470B765429455435008F11AE /* Audio */,
+				470B765329455413008F11AE /* Model */,
+				473005C329735E0900602136 /* Routines */,
+				473005C029735D3000602136 /* Scales */,
+				4790AF73295BA6F40061D19C /* Shared */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		960F57052ED5164B54914BF0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DF77D472AAD1B684531858F2 /* Pods_ScalePlayer.framework */,
+				88A70C59F1B06BA3E77E245C /* Pods_ScalePlayerTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BC984DEA0D69291AE76E6073 /* Generated Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				EB86917E68888FE0CDB4CAC1 /* ScalePlayerTests-ScalePlayerMocks.generated.swift */,
+			);
+			name = "Generated Mocks";
+			sourceTree = "<group>";
+		};
+		EBD41A8634EDC65BDA0D7FE1 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				56D90D6A196654479F29C848 /* Pods-ScalePlayer.debug.xcconfig */,
+				6A20E96402FB427C8CA9AAA7 /* Pods-ScalePlayer.release.xcconfig */,
+				E8D31A29B0D2B8D3BEE68C70 /* Pods-ScalePlayerTests.debug.xcconfig */,
+				FD47F06D122E12FF0829E79F /* Pods-ScalePlayerTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5398FBE321AC203E005EC24C /* ScalePlayer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5398FC0121AC2041005EC24C /* Build configuration list for PBXNativeTarget "ScalePlayer" */;
+			buildPhases = (
+				F7ACA1E3F73F7E9D0CB449F6 /* [CP] Check Pods Manifest.lock */,
+				5398FBE021AC203E005EC24C /* Sources */,
+				473005B92972875900602136 /* swiftlint */,
+				5398FBE121AC203E005EC24C /* Frameworks */,
+				5398FBE221AC203E005EC24C /* Resources */,
+				E04A4CDF27183C4DF20C4EDD /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ScalePlayer;
+			productName = MIDIPianoRollView;
+			productReference = 5398FBE421AC203E005EC24C /* ScalePlayer.app */;
+			productType = "com.apple.product-type.application";
+		};
+		5398FBF721AC2041005EC24C /* ScalePlayerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5398FC0421AC2041005EC24C /* Build configuration list for PBXNativeTarget "ScalePlayerTests" */;
+			buildPhases = (
+				B52F0A65BADBD70DC3147F42 /* [CP] Check Pods Manifest.lock */,
+				D1CF5323D067F8167F627D1A /* Generate Mockingbird Mocks */,
+				5398FBF421AC2041005EC24C /* Sources */,
+				5398FBF521AC2041005EC24C /* Frameworks */,
+				5398FBF621AC2041005EC24C /* Resources */,
+				7A69871C6749C46B97AB4AA6 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5398FBFA21AC2041005EC24C /* PBXTargetDependency */,
+			);
+			name = ScalePlayerTests;
+			productName = MIDIPianoRollViewTests;
+			productReference = 5398FBF821AC2041005EC24C /* ScalePlayerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5398FBDC21AC203E005EC24C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = "John Shimmin";
+				TargetAttributes = {
+					5398FBE321AC203E005EC24C = {
+						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1420;
+					};
+					5398FBF721AC2041005EC24C = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 5398FBE321AC203E005EC24C;
+					};
+				};
+			};
+			buildConfigurationList = 5398FBDF21AC203E005EC24C /* Build configuration list for PBXProject "ScalePlayer" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 5398FBDB21AC203E005EC24C;
+			productRefGroup = 5398FBE521AC203E005EC24C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5398FBE321AC203E005EC24C /* ScalePlayer */,
+				5398FBF721AC2041005EC24C /* ScalePlayerTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5398FBE221AC203E005EC24C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				47AE4A38291C6FA8000AFAE9 /* TimGM6mb.sf2 in Resources */,
+				5398FBF221AC2041005EC24C /* LaunchScreen.storyboard in Resources */,
+				5398FBEF21AC2041005EC24C /* Assets.xcassets in Resources */,
+				476167942968161E00F3405D /* RoutineScaleTableViewCell.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5398FBF621AC2041005EC24C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		473005B92972875900602136 /* swiftlint */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = swiftlint;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "cd ScalePlayer\n\"${PODS_ROOT}/SwiftLint/swiftlint\"\n";
+		};
+		7A69871C6749C46B97AB4AA6 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ScalePlayerTests/Pods-ScalePlayerTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ScalePlayerTests/Pods-ScalePlayerTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ScalePlayerTests/Pods-ScalePlayerTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B52F0A65BADBD70DC3147F42 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ScalePlayerTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D1CF5323D067F8167F627D1A /* Generate Mockingbird Mocks */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Generate Mockingbird Mocks";
+			outputPaths = (
+				"$(SRCROOT)/MockingbirdMocks/ScalePlayerTests-ScalePlayerMocks.generated.swift",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -eu\n\n# Prevent Xcode 13 from running this script while indexing.\n[[ \"${ACTION}\" == \"indexbuild\" ]] && exit 0\n\n\"${SRCROOT}/Pods/MockingbirdFramework/mockingbird\" generate --targets \"ScalePlayer\" --outputs \"${SRCROOT}/MockingbirdMocks/ScalePlayerTests-ScalePlayerMocks.generated.swift\"\n";
+		};
+		E04A4CDF27183C4DF20C4EDD /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ScalePlayer/Pods-ScalePlayer-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ScalePlayer/Pods-ScalePlayer-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ScalePlayer/Pods-ScalePlayer-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F7ACA1E3F73F7E9D0CB449F6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ScalePlayer-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5398FBE021AC203E005EC24C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				473005AE29709AF600602136 /* ScaleEditToolbar.swift in Sources */,
+				47287E13294BC32D004DAB0A /* TempoView.swift in Sources */,
+				47B30499295A422A00B20F6B /* PerformScaleViewController.swift in Sources */,
+				47B30494295382C400B20F6B /* ScaleSearchViewModel.swift in Sources */,
+				4790AF75295BA70C0061D19C /* ScaleBuilder.swift in Sources */,
+				47287E2A2950E972004DAB0A /* RoutineEditViewModel.swift in Sources */,
+				47B304962953C35800B20F6B /* Container+ScalePlayer.swift in Sources */,
+				47FC8011296E35FF0048A0C3 /* UIView+Separator.swift in Sources */,
+				47801452297AB47B0089D82E /* AppCoordinator.swift in Sources */,
+				47287E20294E8D8A004DAB0A /* RoutinesTableViewController.swift in Sources */,
+				476167932968161E00F3405D /* RoutineScaleTableViewCell.swift in Sources */,
+				4790AF79295C7FDF0061D19C /* PerformScaleViewModel.swift in Sources */,
+				5398FBEA21AC203E005EC24C /* ScaleEditViewController.swift in Sources */,
+				5398FBE821AC203E005EC24C /* AppDelegate.swift in Sources */,
+				47FC801A296FAE8B0048A0C3 /* NSMutableAttributedString+Append.swift in Sources */,
+				47B30492295352A900B20F6B /* ScaleSearchViewController.swift in Sources */,
+				47287E22294E8F0E004DAB0A /* RoutinesTableViewModel.swift in Sources */,
+				47FC8014296E4EB10048A0C3 /* SingleValueEditor.swift in Sources */,
+				473005B02970A4B000602136 /* PerformScaleToolbar.swift in Sources */,
+				4761678E2967BC3E00F3405D /* Publisher+WeakAssign.swift in Sources */,
+				47C495F2293D9F6900DD94FA /* ScalesModel.xcdatamodeld in Sources */,
+				47B3049B295A704E00B20F6B /* PerformScalesTableViewController.swift in Sources */,
+				473005B22970D74C00602136 /* ViewControllerFactory.swift in Sources */,
+				47287E26294E90D3004DAB0A /* CoreDataRoutineDataStore.swift in Sources */,
+				470B765029403CCC008F11AE /* CoreDataScaleDataStore.swift in Sources */,
+				47FC8018296F93D50048A0C3 /* ErrorHandler.swift in Sources */,
+				5398FC0921AC20B2005EC24C /* ScaleEditView.swift in Sources */,
+				47E09787297CA04900755053 /* BeatCursor.swift in Sources */,
+				5398FC0D21AC226F005EC24C /* ScaleEditCellView.swift in Sources */,
+				47801458297AF1290089D82E /* RoutineTableCoordinator.swift in Sources */,
+				47B71CD029393BB50026F4B1 /* ScaleDataStore.swift in Sources */,
+				4761678C2967889A00F3405D /* PublishedOnMain.swift in Sources */,
+				47287E28294EFD99004DAB0A /* RoutineEditViewController.swift in Sources */,
+				47FC8016296F7D330048A0C3 /* PlaybackSpritesView.swift in Sources */,
+				5398FC0B21AC224D005EC24C /* ScaleEditRowView.swift in Sources */,
+				5312FF6921AD27B4009C326D /* ScaleEditMeasureLineLayer.swift in Sources */,
+				4780145A297AF9060089D82E /* RoutineEditCoordinator.swift in Sources */,
+				474DE581296A2F2E008B42E4 /* UITableView+EmptyMessage.swift in Sources */,
+				470B765B29455917008F11AE /* CoreDataContext.swift in Sources */,
+				47287E16294C3A65004DAB0A /* RootViewController.swift in Sources */,
+				474DE583296B81FD008B42E4 /* SimonWedgeView.swift in Sources */,
+				4790AF7B295CA0200061D19C /* WeakObjectSet.swift in Sources */,
+				47FC800C296D06D80048A0C3 /* NameEditView.swift in Sources */,
+				5312FF7021AD760B009C326D /* ScaleNotePosition.swift in Sources */,
+				4761678429615FAD00F3405D /* MidiPlayer.swift in Sources */,
+				5398FC0F21AC2284005EC24C /* ScaleNote.swift in Sources */,
+				4761677E295EB76100F3405D /* TempoViewModel.swift in Sources */,
+				47E09785297C8E6500755053 /* UIBezierPath+Lines.swift in Sources */,
+				47AE4A362918C2CE000AFAE9 /* StrokeGestureRecognizer.swift in Sources */,
+				47801450297AB4330089D82E /* Coordinator.swift in Sources */,
+				47FC8008296BD2950048A0C3 /* Logger+ScalePlayer.swift in Sources */,
+				470B765729455608008F11AE /* ScalesTableViewModel.swift in Sources */,
+				47B71CD229393E040026F4B1 /* PracticeScale.swift in Sources */,
+				47E09789297CA46600755053 /* ScaleEditView+Types.swift in Sources */,
+				47801456297AECD20089D82E /* ScalesEditCoordinator.swift in Sources */,
+				476167882965554D00F3405D /* PerformRoutinesTableViewController.swift in Sources */,
+				473005BB2972E5CA00602136 /* PracticeRoutine+Typed.swift in Sources */,
+				47801454297ADFC70089D82E /* ScalesTableCoordinator.swift in Sources */,
+				47B71CDB293AD4600026F4B1 /* ScalesTableViewController.swift in Sources */,
+				47287E24294E9082004DAB0A /* RoutineDataStore.swift in Sources */,
+				47FC800A296CDFF30048A0C3 /* UIColor+app.swift in Sources */,
+				47287E1C294E34DB004DAB0A /* RootViewModel.swift in Sources */,
+				47698789292DBDEA0028F3D7 /* ScaleEditViewModel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5398FBF421AC2041005EC24C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				473005BD2973056800602136 /* PlaybackSpritesViewTests.swift in Sources */,
+				473005B62972365500602136 /* RoutineEditViewControllerTests.swift in Sources */,
+				5398FBFD21AC2041005EC24C /* ScaleNoteTests.swift in Sources */,
+				473005BF2973094800602136 /* MidiPlayerTests.swift in Sources */,
+				473005B42972359500602136 /* RoutineEditViewModelTests.swift in Sources */,
+				0D9BBAAAFEA22785EE6ABB58 /* ScalePlayerTests-ScalePlayerMocks.generated.swift in Sources */,
+				473005B82972800400602136 /* XCTestCase+ScalePlayer.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5398FBFA21AC2041005EC24C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5398FBE321AC203E005EC24C /* ScalePlayer */;
+			targetProxy = 5398FBF921AC2041005EC24C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		5398FBF021AC2041005EC24C /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5398FBF121AC2041005EC24C /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		5398FBFF21AC2041005EC24C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		5398FC0021AC2041005EC24C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5398FC0221AC2041005EC24C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 56D90D6A196654479F29C848 /* Pods-ScalePlayer.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = KG9XBZH758;
+				INFOPLIST_FILE = ScalePlayer/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.shimmin.ScalePlayer;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		5398FC0321AC2041005EC24C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6A20E96402FB427C8CA9AAA7 /* Pods-ScalePlayer.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = KG9XBZH758;
+				INFOPLIST_FILE = ScalePlayer/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.shimmin.ScalePlayer;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		5398FC0521AC2041005EC24C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E8D31A29B0D2B8D3BEE68C70 /* Pods-ScalePlayerTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = KG9XBZH758;
+				INFOPLIST_FILE = ScalePlayerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.shimmin.ScalePlayerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ScalePlayer.app/ScalePlayer";
+			};
+			name = Debug;
+		};
+		5398FC0621AC2041005EC24C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FD47F06D122E12FF0829E79F /* Pods-ScalePlayerTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = KG9XBZH758;
+				INFOPLIST_FILE = ScalePlayerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.shimmin.ScalePlayerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ScalePlayer.app/ScalePlayer";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5398FBDF21AC203E005EC24C /* Build configuration list for PBXProject "ScalePlayer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5398FBFF21AC2041005EC24C /* Debug */,
+				5398FC0021AC2041005EC24C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5398FC0121AC2041005EC24C /* Build configuration list for PBXNativeTarget "ScalePlayer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5398FC0221AC2041005EC24C /* Debug */,
+				5398FC0321AC2041005EC24C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5398FC0421AC2041005EC24C /* Build configuration list for PBXNativeTarget "ScalePlayerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5398FC0521AC2041005EC24C /* Debug */,
+				5398FC0621AC2041005EC24C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		47C495F0293D9F6900DD94FA /* ScalesModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				47C495F1293D9F6900DD94FA /* Model.xcdatamodel */,
+			);
+			currentVersion = 47C495F1293D9F6900DD94FA /* Model.xcdatamodel */;
+			path = ScalesModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 5398FBDC21AC203E005EC24C /* Project object */;
+}

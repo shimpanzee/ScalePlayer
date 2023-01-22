@@ -1,0 +1,40 @@
+PODS:
+  - CombineCocoa (0.4.1)
+  - Factory (1.2.9)
+  - MockingbirdFramework (0.20.0)
+  - MusicTheorySwift (1.1.0)
+  - Peek (5.3.0)
+  - SwiftLint (0.50.3)
+  - TinyConstraints (4.0.2)
+
+DEPENDENCIES:
+  - CombineCocoa
+  - Factory
+  - MockingbirdFramework
+  - MusicTheorySwift
+  - Peek
+  - SwiftLint
+  - TinyConstraints
+
+SPEC REPOS:
+  trunk:
+    - CombineCocoa
+    - Factory
+    - MockingbirdFramework
+    - MusicTheorySwift
+    - Peek
+    - SwiftLint
+    - TinyConstraints
+
+SPEC CHECKSUMS:
+  CombineCocoa: e5210dbfb480ff251078929459ac17e750e7af1d
+  Factory: 883df5a392a7f4110597c42652b8db9c07618a09
+  MockingbirdFramework: 54e35fbbb47b806c1a1fae2cf3ef99f6eceb55e5
+  MusicTheorySwift: 555d61fc174c36c7cb1a41cf20b54628ba6b3e32
+  Peek: 4209f7aa72d00244616f6b4804739c04cae2e457
+  SwiftLint: 77f7cb2b9bb81ab4a12fcc86448ba3f11afa50c6
+  TinyConstraints: 7b7ccc0c485bb3bb47082138ff28bc33cd49897f
+
+PODFILE CHECKSUM: 40c13faab78e12f12c3216d91504c182d15a2864
+
+COCOAPODS: 1.11.3

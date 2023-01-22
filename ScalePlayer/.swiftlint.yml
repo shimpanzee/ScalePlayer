@@ -1,0 +1,6 @@
+disabled_rules:
+  - line_length
+  - todo
+  - identifier_name
+  
+# only_rules:

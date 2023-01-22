@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="RoutineScaleTableViewCell" customModule="ScalePlayer" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Scale name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tLR-go-Em8">
+                        <rect key="frame" x="16" y="11.5" width="88.5" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="999" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Os3-b5-ohK">
+                        <rect key="frame" x="249" y="5" width="55" height="34"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <textInputTraits key="textInputTraits"/>
+                    </textField>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="tLR-go-Em8" secondAttribute="bottom" constant="11.5" id="0BZ-Uz-L87"/>
+                    <constraint firstAttribute="trailing" secondItem="Os3-b5-ohK" secondAttribute="trailing" constant="16" id="1bX-lU-JrR"/>
+                    <constraint firstItem="Os3-b5-ohK" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="2lm-Mo-8DD"/>
+                    <constraint firstItem="Os3-b5-ohK" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="5" id="4rX-Va-LxA"/>
+                    <constraint firstItem="tLR-go-Em8" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="KyW-v3-4ap"/>
+                    <constraint firstAttribute="bottom" secondItem="Os3-b5-ohK" secondAttribute="bottom" constant="5" id="Qu5-L4-qTh"/>
+                    <constraint firstItem="tLR-go-Em8" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="11.5" id="ROm-AC-KTt"/>
+                    <constraint firstItem="tLR-go-Em8" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="k3f-ZO-dmB"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="nameLabel" destination="tLR-go-Em8" id="B69-ko-z9s"/>
+                <outlet property="tempoField" destination="Os3-b5-ohK" id="F7j-9I-6ut"/>
+            </connections>
+            <point key="canvasLocation" x="137.68115942028987" y="153.34821428571428"/>
+        </tableViewCell>
+    </objects>
+</document>
