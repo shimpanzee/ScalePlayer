@@ -128,24 +128,30 @@ However, there is a lot of boiler plate with auto layout.  So I opted for the sy
 one can write:
 
     view.edgesToSuperview()
-    
+
 ### AVFoundation
+For midi playback, Apple provides an implementation using AVFoundation or AudioToolbox. I ended up having to mix the two.
 
+Originally, I wasn't aware there were two options and originally wrote it in AudioToolbox. There seems to be some sort of bug and loading a soundfont took a couple of seconds which resulted in a very poor user experience.
 
+I played around with the third party library, AudioKit, which didn't have the delay problem, but had other weird bugs. I tried to track down the bugs in the AK source code and saw they were using AVFoundation, so decided to roll my own.
+
+I discovered that pre-iOS 16, AVFoundation only allowed playback when the data was loaded from a midi file.  However, it was possible to mix-and-match AVFoundation and AudioToolbox and just use AudioToolbox for the midi track creation.
+
+Apple's documentation for the midi stuff is woefully inadequate. It's very difficult to find people who made it work on the internet. However, one guy, Gene De Lisa, showed up in most of the discussions and provided some helpful hints that helped me keep moving forward, e.g. https://www.rockhoppertech.com/blog/swift-2-avaudiosequencer/
 
 ### Peek
+I had a need to try to match the style of a UIAlertController (see the SingleValueEditor class).  Peek was a helpful tool to debug/introspect the view of a running app and ended up aiding me with the alert controller.
 
-
-
+Additional Notes
+----
+For the scale editing grid, I used code from [MIDIPianoRollView](https://github.com/cemolcay/MIDIPianoRollView) to do the read-only display and extended it to add editing and playback.  I ended up having to change a lot of it to satisfy SwiftLint as well as to make it more readable, but Cem Olcay did a lot of helpful work there.
 
 Open issues
-----
-Could have taken MVVM further.  Would want better routing modeling - MVVMC
+---
+Still largely a toy project.  Added unit tests, but don't have coverage.  Added some mechanisms for handling errors, but didn't go as far as I would in a production project.
 
-Still largely a toy project.  Added unit tests, but don't have coverage.  Added some mechanisms for handling error
-
-No networking
-
-Not enamored with CoreData or completely happy with flow.  See thoughts below, but I would strongly consider alternatives like Realm.
+No networking. The basic features of this app didn't really warrant it. I started a second project (to graph Habitify data) to get hands on there.
 
 Didn't deal with UI/UX complexities like dealing with different orientations (capabilities), supporting light vs dark, etc.
+
