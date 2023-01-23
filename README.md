@@ -3,6 +3,30 @@ ScalePlayer
 
 ScalePlayer is a WIP iOS app to help singers to practice scales and routines.  There are a ton of exisiting similar apps out there, but most of them do not have functionality for building custom routines.
 
+Example screens:
+---
+---
+### Scale list
+App supports individual scales which can be organized into routines
+
+![](images/scaleplayer_list.png)
+
+---
+
+### Scale editor
+App has grid based editing.  Notes can be painted onto the grid.
+
+![](images/scaleplayer_edit.png)
+
+---
+
+### Scale playback
+Playback shows the notes as a contour as well as showing the letter name.  The circle is a beat counter.
+
+![](images/scaleplayer_perform.png)
+
+---
+
 However, the real purpose of this project is for me to get up-to-date on experience with modern swift and iOS development -- until now most of my iOS development has been objective-C and C++.
 
 Learning Goals
