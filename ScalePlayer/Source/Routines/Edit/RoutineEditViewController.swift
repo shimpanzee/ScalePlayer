@@ -67,7 +67,7 @@ class RoutineEditViewController: UIViewController {
             .sink { [weak self] _ in self?.dismiss(animated: true) }
             .store(in: &subscriptions)
 
-        view.backgroundColor = .white
+        view.backgroundColor = .systemBackground
         let guide = view.safeAreaLayoutGuide
 
         let addButton = UIButton(type: .system)

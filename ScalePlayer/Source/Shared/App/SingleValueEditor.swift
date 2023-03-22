@@ -65,7 +65,7 @@ class SingleValueEditor: UIViewController {
     override func viewDidLoad() {
         view.backgroundColor = .clear
 
-        modalView.backgroundColor = .white
+        modalView.backgroundColor = .systemBackground
 
         view.addSubview(modalView)
 
@@ -155,7 +155,7 @@ class SingleValueEditor: UIViewController {
     private func configureValueField() {
         modalView.addSubview(valueField)
         valueField.placeholder = placeholderText
-        valueField.backgroundColor = .white
+        valueField.backgroundColor = .systemBackground
         valueField.font = .systemFont(ofSize: 13)
         valueField.layer.cornerRadius = 7
         valueField.layer.borderColor = UIColor.lightGray.withAlphaComponent(0.5).cgColor

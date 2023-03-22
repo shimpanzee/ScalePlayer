@@ -180,5 +180,8 @@ Still largely a toy project.  Added unit tests, but don't have coverage.  Added 
 
 No networking. The basic features of this app didn't really warrant it. I started a second project (to graph Habitify data) to get hands on there.
 
-Didn't deal with some UI/UX complexities like dealing with different device capabilities, supporting light vs dark, etc.  I did not hardcode any sizings, paid attention to safe area, and was able to verify that the app works on different device sizes/types/orientations.
+I didn't do anything special with device capabilities, but I did pay attention to safe areas aand was able to verify that the app works on different device sizes/types/orientations.  I verified that dark mode works for everything (after some tweaks) except for the playback screen.  I'm not a designer so I won't pretend I did a good job with UI/UX in general.
+
+
+
 
