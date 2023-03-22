@@ -126,7 +126,10 @@ I find it annoying that you can't create a temporary object, e.g. any object you
 
 In some cases it's impossible to avoid force casts (e.g. for 1-many relationship arrays). And properties can be nullable even when you mark the property as required in the model. It feels like objective-C with a Swift wrapper.
 
-I'm definitely opting for Realm or some other alternative if I have a choice on my next project.
+I played around with some alternatives and started to implement them in the app.  Realm improved on some of the CoreData shortcomings, but I dislike the fact that the data persistence lifecycle bleeds into the VCs. And it shares the CoreData shortcoming of requiring model objects to extend a magic object.  
+On paper, GRDB fixes all of the above problems:  no magic objects, clear separation of persistence and app logic, clear persistence lifecycle.  However, it requires the developer to do a lot of lifting and has no real opinion about how relationships should be saved -- I couldn't even find reasonable examples in the doc and had to scour github issues (e.g. https://github.com/groue/GRDB.swift/issues/358).  Per the author, the idea is to "Trust SQLite More Than Yourself".  I'm very comfortable with sql databases, but it feels a little dirty exposing other iOS devs to it.  
+
+For now leaving the persistence to CoreData.
 
 ### SwiftLint
 https://github.com/realm/SwiftLint
